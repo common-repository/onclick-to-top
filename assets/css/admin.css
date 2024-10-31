@@ -1,0 +1,521 @@
+.settings_page_on-click-to-top {
+    background: #fff!important;
+}
+.settings_page_on-click-to-top #wpbody {
+    background: #fff;
+}
+.settings_page_on-click-to-top #wpbody-content {
+    padding-bottom: 0;
+}
+.settings_page_on-click-to-top #update-nag, .update-nag {
+    display: inline-block;
+    line-height: 1.4;
+    padding: 11px 15px;
+    font-size: 14px;
+    /* margin: 25px 20px 0 2px; */
+    position: fixed;
+    z-index: 999999999999;
+    width: 94%;
+}
+.settings_page_on-click-to-top #setting-error-settings_updated {
+    display: inline-block;
+    line-height: 1.4;
+    padding: 0;
+    font-size: 14px;
+    /* margin: 25px 20px 0 2px; */
+    position: fixed;
+    z-index: 999999999999;
+    width: 86%;
+    top: 30px;
+}
+.octt-vertical-tabs .octt-tab-content .submit .button-primary {
+    background: #ed5839;
+    border-color: #ed5839;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    transition: linear .4s;
+}
+.octt-vertical-tabs .octt-tab-content .submit .button-primary:hover {
+    background: #111;
+    border-color: #111;
+}
+
+
+/*
+*number input box css
+*/
+input.onclick_number_input {
+    width: 70px;
+    /* position: relative; */
+}
+
+
+input::placeholder {
+    content: ' px';
+    opacity: 1;
+}
+  
+
+/*css for toggle switch*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transition: all 0.3s;
+    font-size: 10px;
+    text-align: center;
+    line-height: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.switch::after {
+    content: 'off';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s;
+}
+
+.checkbox:checked+.switch::after {
+    left: 20px;
+    content: 'on';
+}
+
+.checkbox:checked+.switch {
+    background-color: #ed5839;
+}
+
+.checkbox {
+    display: none !important;
+}
+
+.checkbo:checked+.switch::after {
+    left: 20px;
+    content: 'on';
+}
+
+.checkbo:checked+.switch {
+    background-color: #ed5839;
+}
+
+.checkbo {
+    display: none !important;
+}
+.checkbox-admin:checked+.switch::after {
+    left: 20px;
+    content: 'on';
+}
+
+.checkbox-admin:checked+.switch {
+    background-color: #ed5839;
+}
+
+.checkbox-admin {
+    display: none !important;
+}
+.checkbox-draggable:checked+.switch::after {
+    left: 20px;
+    content: 'on';
+}
+
+.checkbox-draggable:checked+.switch {
+    background-color: #ed5839;
+}
+
+.checkbox-draggable {
+    display: none !important;
+}
+
+/* css for pro  */
+.is-pro {
+    pointer-events: none;
+    opacity: .5;
+}
+/* Tooltip container */
+.tooltip {
+    position: relative;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: #ed5839;
+    color: #fff;
+    text-align: center;
+    padding: 3px 4px;
+    border-radius: 6px;
+   top: -34px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+/*css for icon border style*/
+.icon_border_style {
+    display: flex;
+}
+
+/*css for onclick radio button*/
+.octt-radio-button {
+    margin: 10px;
+}
+
+.octt-radio-button input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+ 
+
+/* General styles for the range input */
+.octt-tab-pane input[type="range"] {
+    -webkit-appearance: none;
+    /* width: 100%; */
+    appearance: none;
+    height: 10px;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    opacity: 1;
+}
+
+/* Styles for the thumb (handle) */
+.octt-tab-pane input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #FF5722;
+    cursor: pointer;
+    border-radius: 50%;
+    /* border: 2px solid #333; */
+    /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); */
+    transition: background 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.octt-tab-pane input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #FF5722;
+    cursor: pointer;
+    border-radius: 50%;
+    /* border: 2px solid #333; */
+    /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); */
+    transition: background 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+.octt-radio-button label {
+    background-color: #ddd;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.octt-radio-button label:hover {
+    background-color: #ed5839;
+    color: #fff;
+    border: 1px solid #ed5839;
+}
+
+.octt-radio-button input[type="radio"]:focus+label {
+    border: 1px solid #444;
+}
+
+.octt-radio-button input[type="radio"]:checked+label {
+    background-color: #ed5839;
+    border-color: #ed5839;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*css for icon onclicke-button-position*/
+.octt-button-position {
+    display: flex;
+}
+/*css for icon reset buttons*/
+input[type=number] {
+    line-height: 0;
+    border: 1px solid #ed5839;
+}
+input[type=number]:focus {
+    border: 1px solid #ed5839;
+    outline: 0;
+    box-shadow: none;
+}
+.setting-option-hide .reset_buttons{
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 3px 8px;
+    box-shadow: 0 0 0 transparent;
+    border-radius: 4px;
+    border: 1px solid #ed5839;
+    background-color: #fff;
+    color: #2c3338;
+}
+.setting-option-hide .reset_buttons:hover{
+    background-color: #ed5839;
+    color: #fff;
+}
+
+/*css for icon hide button group*/
+.hide-buttons-group {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.hide-buttons-group .hide-buttons input[type="checkbox"]{
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+.hide-buttons-group .hide-buttons .display-on{
+    padding: 10px 20px;
+    border: 1px solid #675ed5;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #f0f0f1;
+    overflow: hidden;
+}
+.hide-buttons-group .hide-buttons input[type="checkbox"]:focus+label {
+    border: 1px solid #444;
+}
+
+.hide-buttons-group .hide-buttons input[type="checkbox"]:checked+label {
+    background-color: #ed5839;
+    border-color: #ed5839;
+    color: #fff;
+    cursor: pointer;
+}
+.hide-buttons-group .hide-buttons input[type="checkbox"]:checked+label img {
+    filter: contrast(0%) brightness(2);
+}
+.hide-buttons-group .hide-buttons label:hover {
+    background-color: #ed5839;
+    color: #fff;
+}
+
+.hide-buttons-group .hide-buttons label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.hide-buttons-group .hide-buttons label span{
+    font-size: .875rem;
+    font-weight: 500;
+}
+.hide-buttons-group .hide-buttons label img{
+   margin-right: 5px;
+}
+
+
+.color-options {
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* admin tab css start */
+
+body.settings_page_on-click-to-top #wpcontent {
+    padding-left: 0;
+    background: #fff;
+}
+body.settings_page_on-click-to-top .wrap{
+    margin: 0;
+}
+.octt-vertical-tabs .octt-tab-menu .on-click-title-header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    position: relative;
+}
+.octt-vertical-tabs .octt-tab-menu .on-click-title-header .on-click-plugin-icon{
+    width: 39px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.octt-vertical-tabs {
+    display: flex;
+}
+
+.octt-tab-menu {
+    /* flex: 0 0 200px; */
+    border-right: 1px solid #ddd;
+    background: #fff;
+    width: 25%;
+    max-width: 300px;
+    padding: 20px 0;
+}
+
+.octt-tab-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.octt-tab-menu ul li {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin: 0;
+   
+    border-bottom: 1px solid #ddd;
+}
+
+.octt-tab-menu ul li.active {
+    background-color: #fff;
+    border-right: 3px solid #ED5839;
+}
+.octt-tab-menu ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.octt-tab-menu ul li a img {
+    margin-right: 10px;
+}
+.octt-tab-menu ul li a {
+    text-decoration: none;
+    color: #555;
+    /* display: block; */
+    font-size: 1rem;
+    padding: 15px 15px;
+}
+.octt-tab-menu ul li a img {
+    filter: grayscale(.9);
+}
+.octt-tab-menu ul li:hover a {
+    color: #ED5839;
+    
+}
+.octt-tab-menu ul li:hover a img {
+    filter: grayscale(0);
+    
+}
+.octt-tab-menu ul li a:focus {
+    box-shadow: none;
+
+}
+
+.octt-tab-menu ul li.active a {
+    color: #ED5839;
+}
+.octt-tab-menu ul li.active a img {
+    filter: grayscale(0);
+}
+
+.octt-vertical-tabs .octt-tab-content .octt-tab-pane .on-click-settings-hedding  {
+   
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 21px;
+    width: -webkit-fill-available;
+    background-color: white; 
+    z-index: 1000;
+    
+}
+.octt-vertical-tabs .octt-tab-content .octt-tab-pane .on-click-settings-hedding .on-click-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+/* .octt-vertical-tabs .octt-tab-content .octt-tab-pane .on-click-settings-hedding .on-click-item .on-click-submit-button p{
+    display: inline-block;
+    margin: 0;
+} */
+
+#image-preview img{
+    width: 60px;
+    height: 60px;
+    margin-bottom:30px;
+}
+#image-preview p{
+    
+    margin-bottom:30px;
+}
+
+.octt-vertical-tabs .octt-tab-content .octt-tab-pane .on-click-settings-hedding .on-click-sub-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    padding-left: 20px;
+}
+.octt-vertical-tabs .octt-tab-content .octt-tab-pane .on-click-settings-hedding .on-click-sub-title img {
+    margin-right: 10px;
+}
+.octt-vertical-tabs .octt-tab-content .octt-tab-pane .form-table-content {
+    margin: 20px;
+    margin-top: 80px;
+}
+.octt-vertical-tabs .octt-tab-content .octt-tab-pane .form-table-content .form-table .content-item{
+    display: block;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.octt-vertical-tabs .octt-tab-content .submit{
+    margin-left: 20px;
+}
+.octt-tab-content {
+    flex: 1;
+    padding: 20px 0 20px 0px;
+    background: #fff;
+}
+
+.octt-tab-pane {
+    display: none;
+    overflow: hidden;
+}
+
+.octt-tab-pane.active {
+    display: block;
+}
+
+/* admin tab css end */
